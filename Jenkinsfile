@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
+        stage('Checkout!') {
             steps {
                 git branch: 'main',
                     credentialsId: 'github-access-token',
